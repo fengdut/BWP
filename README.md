@@ -1,4 +1,3 @@
-simplePIC
-=========
+Beam Wave Particle in cell (BWP) is a simple simulation code for beam plasma nonlinear interaction.
 
-a simple particle in cell plasma simulation program.
+

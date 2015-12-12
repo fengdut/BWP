@@ -1,13 +1,13 @@
-TARGET = simplePIC
+TARGET = BWP
 
 _SRCS := main.c particles.c update_grid.c update_particle.c constant.c vector.c
 
 CC = gcc
 
-SRCDIR = ./src
-BINDIR = ./bin
-INCLUDE = ./include
-OBJDIR = ./obj
+SRCDIR = ./
+BINDIR = ./
+INCLUDE = ./
+OBJDIR = ./
 
 _OBJS := $(patsubst %.c,%.o,$(_SRCS))
 SRCS = $(patsubst %,$(SRCDIR)/%,$(_SRCS))
@@ -29,5 +29,5 @@ tidy :
 	$(VERBOSE)find . | egrep "\~" | xargs rm -f
 
 clean:  tidy
-	rm $(OBJDIR)/* $(BINDIR)/*
+	rm *.o $(TARGET)
 
