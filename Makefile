@@ -19,7 +19,7 @@ CGLAGS = -g -Wall
 all:: $(TARGET)
 
 $(TARGET): ${OBJS}
-	$(CC) -o $(BINDIR)/$@ $^
+	$(CC) -lm -o $(BINDIR)/$@ $^
 
 $(OBJDIR)/%.o: $(SRCDIR)/%.c
 	$(CC) -I$(INCLUDE) $(CFLAGS) -o $@ -c $<

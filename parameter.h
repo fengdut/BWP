@@ -6,7 +6,7 @@ typedef struct
   int stepnum;//simulation step number.
   int period;// dump data every period step.
   int dim;//dimension
-  int* N;//an array of cell number
-  double* size;//an array of cell number  
+  int N;//an array of cell number
+  double size;//an array of cell number  
 }Parameter;
 #endif
