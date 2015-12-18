@@ -4,6 +4,7 @@
 #include "update_particle.h"
 #include "particles.h"
 #include "parameter.h"
+#include"input.h"
 int init(Parameter*,Particles*);
 
 int main (int argc, char *argv[])
@@ -14,6 +15,7 @@ int main (int argc, char *argv[])
   // update grid
   // calculate force
   // update particle and species
+	read_input();
   Parameter para;
   Particles P;
   init(&para,&P);
@@ -34,7 +36,7 @@ int main (int argc, char *argv[])
   int i;
   for (i = 0; i < 10000; ++i)
   {
-  particles_print(&P);  
+  //particles_print(&P);  
   update_particle_boris(&P,&para);  
   } 
 
